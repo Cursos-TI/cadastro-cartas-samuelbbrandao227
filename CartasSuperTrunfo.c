@@ -81,6 +81,13 @@ int main() {
   printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
   printf("Densidade Populacional: %f hab/km²\n", dens_pop2);
   printf("PIB per Capita: R$%.2f\n", pib_per_capita2);
-  
+
+  printf("\nComparação entre as cartas:\n");
+  printf("População: %s\n", (populacao > populacao2) ? "Carta 1 é maior" : (populacao < populacao2) ? "Carta 2 é maior" : "Empate");
+  printf("Área: %s\n", (area > area2) ? "Carta 1 é maior" : (area < area2) ? "Carta 2 é maior" : "Empate");
+  printf("PIB: %s\n", (pib > pib2) ? "Carta 1 é maior" : (pib < pib2) ? "Carta 2 é maior" : "Empate");
+  printf("Número de Pontos Turísticos: %s\n", (pontos_turisticos > pontos_turisticos2) ? "Carta 1 é maior" : (pontos_turisticos < pontos_turisticos2) ? "Carta 2 é maior" : "Empate");
+  printf("Densidade Populacional: %s\n", (dens_pop > dens_pop2) ? "Carta 1 é maior" : (dens_pop < dens_pop2) ? "Carta 2 é maior" : "Empate");
+  printf("PIB per Capita: %s\n", (pib_per_capita > pib_per_capita2) ? "Carta 1 é maior" : (pib_per_capita < pib_per_capita2) ? "Carta 2 é maior" : "Empate");
   return 0;
 } 
